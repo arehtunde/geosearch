@@ -11,65 +11,74 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .main {
   border: 1px solid red;
-  font-family: 'Lobster', cursive;
+  font-family: cursive;
   display: flex;
   flex-direction: column;
 }
 
 .content {
-  background-image: url(dri.jpg);
   padding: 0 1rem;
+  background-color: aqua;
 }
 
 .content_logo {
-  
+  font-family: 'Sriracha', cursive;
 }
 
 .content_input {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .content_input-header {
   font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .content_input-para {
   font-size: 1.5rem;
+  margin-top: 5px;
 }
 
 .content_search {
-  border: 1px solid red;
+
 }
 
 input[type="text"] {
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
+  padding: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
 
-.buton {
-  borer: 2px solid #0339A6;
-  background-color: #008000;
-  color: #f2f2f2;
-  border-radius: 5px;
-  display: block;
-  padding: 2px 5px;
-  cursor: pointer;
-  font-family: 'Lobster', cursive;
-  font-size: 1.2rem;
+input[type="text"]::placeholder {
+  font-family: cursive;
+}
+
+input[type="text"]:placeholder-shown {
+  border: 2px solid #008000;
 }
 
 .button {
   display: block;
-  margin: 0 auto;
-  padding: 2px 5px;
+  margin: 1rem auto;
   background-color: #008000;
   border: 2px solid #008000;
+  border-radius: 5px;
   color: #f2f2f2;
   cursor: pointer;
   font-family: 'Lobster', cursive;
+}
+
+.features {
+  border: 1px solid red;
+  padding: 0 1rem;
+  background-color: aqua;
 }
