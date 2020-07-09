@@ -31,6 +31,21 @@ body {
 
 .content_logo {
   font-family: 'Lobster Two', cursive;
+  padding: 1rem 0;
+}
+
+.content_logo-header {
+  display: inline;
+  margin-left: .3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #011b33;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .content_input {
@@ -45,10 +60,6 @@ body {
 
 .content_input-para {
   margin-top: 5px;
-}
-
-.content_search {
-  
 }
 
 input[type="text"] {
@@ -95,8 +106,9 @@ input[type="text"]:placeholder-shown {
   font-size: 1.7rem;
 }
 
-.features_card-para {
-  
+.features_card-title {
+  display: inline;
+  margin-left: .3rem;
 }
 
 .foot {
@@ -105,10 +117,6 @@ input[type="text"]:placeholder-shown {
 }
 
 @media screen and (min-width: 550px) {
-  /*body {
-    background-image: url(dri.jpg);
-  }*/
-
   .main {
     width: 80%;
     margin: 0 auto;
@@ -124,16 +132,6 @@ input[type="text"]:placeholder-shown {
     background-color: #eaf6fc;
   }
 
-  .cotent_input {
-    width: 80%;
-    margin: auto;
-    border: 1px solid red;
-  }
-
-  .contet_search {
-    border: 1px solid red;
-  }
-
   input[type="text"] {
     width: 60%;
   }
@@ -146,7 +144,6 @@ input[type="text"]:placeholder-shown {
 @media screen and (min-width: 950px) {
   .main {
     width: 70%;
-    marin: 0 auto;
   }
 
   .features {
