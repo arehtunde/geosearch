@@ -12,10 +12,13 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  background-color: #eaf6fc;
 }
 
 .main {
   font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  color: #011b33;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;  
@@ -23,7 +26,7 @@ body {
 
 .content {
   padding: 0 1rem 2rem 1rem;
-  background-color: lightpink;
+  background-color: #CEF0B7;
 }
 
 .content_logo {
@@ -52,6 +55,7 @@ input[type="text"] {
   display: block;
   margin: 1rem auto;
   padding: 5px;
+  width: 70%;
   border: none;
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -78,13 +82,13 @@ input[type="text"]:placeholder-shown {
 
 .features {
   padding: 2rem 1rem;
-  background-color: aqua;
+  background-color: #eaf6fc;
 }
 
 .features_card {
-  background-color: #f2f2f2;
+  background-color: #f1fef4;
   padding: 2rem 1rem;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .features_card-title {
@@ -100,18 +104,58 @@ input[type="text"]:placeholder-shown {
   text-align: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
+  /*body {
+    background-image: url(dri.jpg);
+  }*/
+
+  .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .features {
     display: grid;
     gap: 1rem 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .content {
+    background-color: #eaf6fc;
+  }
+
+  .cotent_input {
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+  }
+
+  .contet_search {
+    border: 1px solid red;
+  }
+
+  input[type="text"] {
+    width: 60%;
+  }
+
+  .button {
+    padding: 2px 10px;
   }
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 950px) {
+  .main {
+    width: 70%;
+    marin: 0 auto;
+  }
+
   .features {
     display: grid;
     gap: 1rem 2rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  input[type="text"] {
+    width: 50%;
   }
 }
