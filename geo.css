@@ -15,19 +15,19 @@ body {
 }
 
 .main {
-  border: 1px solid red;
-  font-family: cursive;
+  font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;  
 }
 
 .content {
-  padding: 0 1rem;
-  background-color: aqua;
+  padding: 0 1rem 2rem 1rem;
+  background-color: lightpink;
 }
 
 .content_logo {
-  font-family: 'Sriracha', cursive;
+  font-family: 'Lobster Two', cursive;
 }
 
 .content_input {
@@ -41,12 +41,11 @@ body {
 }
 
 .content_input-para {
-  font-size: 1.5rem;
   margin-top: 5px;
 }
 
 .content_search {
-
+  
 }
 
 input[type="text"] {
@@ -59,7 +58,7 @@ input[type="text"] {
 }
 
 input[type="text"]::placeholder {
-  font-family: cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 input[type="text"]:placeholder-shown {
@@ -74,11 +73,45 @@ input[type="text"]:placeholder-shown {
   border-radius: 5px;
   color: #f2f2f2;
   cursor: pointer;
-  font-family: 'Lobster', cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .features {
-  border: 1px solid red;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   background-color: aqua;
+}
+
+.features_card {
+  background-color: #f2f2f2;
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+}
+
+.features_card-title {
+  font-size: 1.7rem;
+}
+
+.features_card-para {
+  
+}
+
+.foot {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .features {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .features {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
