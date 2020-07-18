@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #eaf6fc;
+}
+
+.main {
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  color: #011b33;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;  
+}
+
+.content {
+  padding: 0 1rem 2rem 1rem;
+  background-color: #CEF0B7;
+}
+
+.content_logo {
+  font-family: 'Lobster Two', cursive;
+  padding: 1rem 0;
+}
+
+.content_logo-header {
+  display: inline;
+  margin-left: .3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #011b33;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.content_input {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content_input-header {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.content_input-para {
+  margin-top: 5px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 5px;
+  width: 70%;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="text"]:placeholder-shown {
+  border: 2px solid #008000;
+}
+
+.button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #008000;
+  border: 2px solid #008000;
+  border-radius: 5px;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.features {
+  padding: 2rem 1rem;
+  background-color: #eaf6fc;
+}
+
+.features_card {
+  background-color: #f1fef4;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
+
+.features_card-title {
+  font-size: 1.7rem;
+}
+
+.features_card-title {
+  display: inline;
+  margin-left: .3rem;
+}
+
+.foot {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+  .main {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  .features {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .content {
+    background-color: #eaf6fc;
+  }
+
+  .content_input-header {
+    font-size: 3rem;
+  }
+
+  .features_card-title {
+    font-size: 2.2rem;
+  }
+
+  input[type="text"] {
+    width: 70%;
+  }
+
+  .button {
+    padding: 2px 10px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .main {
+    width: 80%;
+  }
+
+  .features {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  input[type="text"] {
+    width: 50%;
+  }
+}
