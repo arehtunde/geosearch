@@ -65,7 +65,7 @@ a:hover {
 input[type="text"] {
   display: block;
   margin: 1rem auto;
-  padding: 5px;
+  padding: 7px 5px;
   width: 70%;
   border: none;
   background-color: #f2f2f2;
@@ -86,6 +86,7 @@ input[type="text"]:placeholder-shown {
   background-color: #008000;
   border: 2px solid #008000;
   border-radius: 5px;
+  padding: 5px 7px;
   color: #f2f2f2;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
@@ -109,6 +110,31 @@ input[type="text"]:placeholder-shown {
 .features_card-title {
   display: inline;
   margin-left: .3rem;
+}
+
+.weather {
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  border: 1px solid;
+}
+
+.weather-holder {
+  border: 1px solid;
+  display: flex;
+}
+
+.weather-name {
+  display: inline-block;
+  color: red;
+  margin-right: auto;
+}
+
+.weather-value {
+  display: inline-block;
+  border: 1px solid;
+  text-align: right;
+  color: blue;
 }
 
 .foot {
