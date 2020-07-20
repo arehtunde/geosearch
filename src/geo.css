@@ -21,7 +21,7 @@ body {
   color: #011b33;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;  
+  font-size: 1.7rem;  
 }
 
 .content {
@@ -54,7 +54,7 @@ a:hover {
 }
 
 .content_input-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 5px;
 }
 
@@ -65,8 +65,8 @@ a:hover {
 input[type="text"] {
   display: block;
   margin: 1rem auto;
-  padding: 7px 5px;
-  width: 70%;
+  padding: 10px 7px;
+  width: 90%;
   border: none;
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -74,6 +74,7 @@ input[type="text"] {
 
 input[type="text"]::placeholder {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
 }
 
 input[type="text"]:placeholder-shown {
@@ -100,7 +101,7 @@ input[type="text"]:placeholder-shown {
 }
 
 .btn-text {
-  flex-basis: 80%;
+  flex-basis: 75%;
 }
 
 .btn-icon {
@@ -118,18 +119,18 @@ input[type="text"]:placeholder-shown {
   margin-top: 1rem;
 }
 
-.features_card-title {
-  font-size: 1.7rem;
+.features_card > p {
+  margin-top: 0;
 }
 
 .features_card-title {
   display: inline;
   margin-left: .3rem;
+  font-size: 2rem;
 }
 
 .weather {
   padding: 0;
-  margin-top: 0;
   list-style: none;
   border: 1px solid;
 }
@@ -150,6 +151,16 @@ input[type="text"]:placeholder-shown {
   display: inline-block;
   text-align: right;
   color: blue;
+}
+
+.map_image {
+  border: 1px solid;
+  margin: 2rem 1rem;
+}
+
+.landmark_images {
+  border: 1px solid;
+  margin: 2rem 1rem;
 }
 
 .foot {
@@ -184,10 +195,6 @@ input[type="text"]:placeholder-shown {
 
   input[type="text"] {
     width: 70%;
-  }
-
-  .button {
-    padding: 2px 10px;
   }
 }
 
