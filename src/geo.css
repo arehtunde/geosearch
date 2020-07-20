@@ -87,9 +87,24 @@ input[type="text"]:placeholder-shown {
   border: 2px solid #008000;
   border-radius: 5px;
   padding: 5px 7px;
+  font-size: 1.5rem;
   color: #f2f2f2;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.btn-text {
+  flex-basis: 80%;
+}
+
+.btn-icon {
+  flex-basis: 20%;
 }
 
 .features {
@@ -122,6 +137,7 @@ input[type="text"]:placeholder-shown {
 .weather-holder {
   border: 1px solid;
   display: flex;
+  padding: 10px;
 }
 
 .weather-name {
@@ -132,7 +148,6 @@ input[type="text"]:placeholder-shown {
 
 .weather-value {
   display: inline-block;
-  border: 1px solid;
   text-align: right;
   color: blue;
 }
