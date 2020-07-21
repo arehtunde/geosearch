@@ -19,8 +19,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
   width: 100%;
   color: #011b33;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   font-size: 1.7rem;  
 }
 
@@ -32,6 +32,7 @@ body {
 .content_logo {
   font-family: 'Lobster Two', cursive;
   padding: 1rem 0;
+  margin-bottom: 3rem;
 }
 
 .content_logo-header {
@@ -153,9 +154,14 @@ input[type="text"]:placeholder-shown {
   color: blue;
 }
 
-.map_image {
+.map {
   border: 1px solid;
   margin: 2rem 1rem;
+}
+
+.data_holder {
+  padding: 2rem 1rem;
+  background-color: #eaf6fc;
 }
 
 .landmark_images {
@@ -198,6 +204,22 @@ input[type="text"]:placeholder-shown {
   }
 }
 
+@media screen and (min-width: 660px) {
+  .main_result {
+    display: flex;
+    border: 1px solid red;
+  }
+
+  .data_holder {
+    flex-basis: 40%;
+  }
+
+  .map {
+    with: 100%;
+    border: 1px solid;
+  }
+}
+
 @media screen and (min-width: 950px) {
   .main {
     width: 80%;
@@ -211,5 +233,11 @@ input[type="text"]:placeholder-shown {
 
   input[type="text"] {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .data_holder {
+    flex-basis: 30%;
   }
 }
