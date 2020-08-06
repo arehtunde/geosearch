@@ -5,11 +5,11 @@ html {
 
 *, *::before, *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 0;
-  margin: 0;
   width: 100%;
   height: 100vh;
   background-color: #eaf6fc;
@@ -19,9 +19,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   width: 100%;
   color: #011b33;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;  
+  font-size: 1.7rem;  
 }
 
 .content {
@@ -32,6 +30,7 @@ body {
 .content_logo {
   font-family: 'Lobster Two', cursive;
   padding: 1rem 0;
+  margin-bottom: 3rem;
 }
 
 .content_logo-header {
@@ -54,7 +53,7 @@ a:hover {
 }
 
 .content_input-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 5px;
 }
 
@@ -65,50 +64,51 @@ a:hover {
 input[type="text"] {
   display: block;
   margin: 1rem auto;
-  padding: 5px;
-  width: 70%;
+  padding: 10px 7px;
+  width: 90%;
   border: none;
+  border: 2px solid #080;
   background-color: #f2f2f2;
   border-radius: 5px;
-}
-
-input[type="text"]::-moz-placeholder {
   font-family: 'Ubuntu', sans-serif;
-}
-
-input[type="text"]:-ms-input-placeholder {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-input[type="text"]::-ms-input-placeholder {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-input[type="text"]::placeholder {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-input[type="text"]:-moz-placeholder-shown {
-  border: 2px solid #008000;
-}
-
-input[type="text"]:-ms-input-placeholder {
-  border: 2px solid #008000;
-}
-
-input[type="text"]:placeholder-shown {
-  border: 2px solid #008000;
+  font-size: 1.5rem;
 }
 
 .button {
   display: block;
   margin: 1rem auto;
-  background-color: #008000;
-  border: 2px solid #008000;
+  background-color: #080;
+  border: 2px solid #080;
   border-radius: 5px;
+  padding: 5px 7px;
+  font-size: 1.5rem;
   color: #f2f2f2;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.btn-text {
+  flex-basis: 75%;
+}
+
+.btn-icon {
+  flex-basis: 20%;
+}
+
+.btn-share {
+  background-color: #007fc2;
+  border: 2px solid #007fc2;
+}
+
+.btn-convert {
+  background-color: #e32;
+  border: 2px solid #e32;
 }
 
 .features {
@@ -122,18 +122,96 @@ input[type="text"]:placeholder-shown {
   margin-top: 1rem;
 }
 
-.features_card-title {
-  font-size: 1.7rem;
+.features_card-para {
+  margin-top: 1rem;
 }
 
 .features_card-title {
   display: inline;
   margin-left: .3rem;
+  font-size: 2rem;
+}
+
+.city_info {
+  padding: 0 1rem;
+  margin: 2rem 0 0 0;
+}
+
+.city_info p {
+  padding: 5px;
+}
+
+.weather {
+  padding: 0;
+  list-style: none;
+  border: 1px solid #080;
+}
+
+.weather-holder {
+  border: 1px solid #080;
+  display: flex;
+  padding: 10px;
+}
+
+.icon {
+  height: 18vh;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.weather-icon {
+  height: 75%;
+  margin: 0 auto;
+}
+
+.weather-icon_img {
+  height: 100%;
+}
+
+.card2 {
+  padding: 0 1rem 2rem 1rem;
+}
+
+.weather-name {
+  display: inline-block;
+  color: red;
+  margin-right: auto;
+}
+
+.weather-value {
+  display: inline-block;
+  text-align: right;
+  color: blue;
+}
+
+.map {
+  margin: 1rem 1rem;
+  height: 60vh;
+}
+
+.map_image {
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.data_holder {
+  padding: 0 1rem 2rem 1rem;
+  background-color: #eaf6fc;
+}
+
+.landmark {
+  border: 1px solid red;
+  margin: 2rem 1rem;
+}
+
+.landmark_images {
+  border: 1px solid;
+  padding: 2rem 1rem;
 }
 
 .foot {
-  padding: 0 1rem;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 550px) {
@@ -165,8 +243,32 @@ input[type="text"]:placeholder-shown {
     width: 70%;
   }
 
-  .button {
-    padding: 2px 10px;
+  .map {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .main_result {
+    display: flex;
+  }
+
+  .city_info {
+    display: flex;
+  }
+
+  .local {
+    margin-left: 12.5%;
+  }
+
+  .data_holder {
+    flex-basis: 40%;
+    padding: 0;
+  }
+
+  .map {
+    flex-basis: 60%;
+    height: 100vh;
   }
 }
 
@@ -183,5 +285,19 @@ input[type="text"]:placeholder-shown {
 
   input[type="text"] {
     width: 50%;
+  }
+
+  .local {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .data_holder {
+    flex-basis: 30%;
+  }
+
+  .map {
+    flex-basis: 70%;
   }
 }

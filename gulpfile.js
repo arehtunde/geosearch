@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 const replace = require('gulp-replace');
+const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 
 //files path
@@ -32,7 +33,7 @@ const cssTask = () => {
 
 const jsTask = () => {
   return src(files.jsPath)
-  .pipe(uglify())
+  .pipe(terser())
   .pipe(
     babel({
     presets: ['@babel/env']
