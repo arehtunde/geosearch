@@ -150,13 +150,18 @@ input[type="text"] {
 .weather-holder {
   border: 1px solid #080;
   display: flex;
-  padding: 10px;
+  padding: 7px;
 }
 
 .icon {
   height: 18vh;
   text-align: center;
   margin-bottom: .5rem;
+  background-color: skyblue;
+}
+
+.weather-description {
+  color: #011b33;
 }
 
 .weather-icon {
@@ -181,6 +186,10 @@ input[type="text"] {
 .weather-value {
   display: inline-block;
   text-align: right;
+  color: blue;
+}
+
+.temp-unit {
   color: blue;
 }
 
@@ -212,6 +221,13 @@ input[type="text"] {
 .foot {
   text-align: center;
   padding-bottom: 10px;
+}
+
+.error_info {
+  margin: 2rem 1rem;
+  height: 55vh;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 550px) {
@@ -251,6 +267,7 @@ input[type="text"] {
 @media screen and (min-width: 660px) {
   .main_result {
     display: flex;
+    height: 100%;
   }
 
   .city_info {
@@ -264,11 +281,12 @@ input[type="text"] {
   .data_holder {
     flex-basis: 40%;
     padding: 0;
+    height: 80vh;
   }
 
   .map {
     flex-basis: 60%;
-    height: 100vh;
+    height: calc(50vh + 22rem);
   }
 }
 
