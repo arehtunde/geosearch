@@ -17,11 +17,8 @@ var renderData = function renderData() {
   var t = document.createElement("section");
   t.className = "landmark", main.append(t), t.after(foot), t.innerHTML = '<div class="landmark_images"></div>';
 },
-    resultPage = function resultPage() {
-  (0, _calc.getCoordinate)(), (0, _calc.getWeatherData)();
-},
     button = document.querySelector(".button");
 
 button.addEventListener("click", renderData, {
   once: !0
-}), button.addEventListener("click", resultPage);
+}), button.addEventListener("click", _calc.fetchData);
